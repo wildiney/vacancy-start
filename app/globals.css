@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --vermelho: #A06666;
+  --preto: #1c4788;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,13 +25,13 @@ body {
   display: flex;
 }
 
-body {
+/* body {
   background-image: var(--bgImage);
   background-size: cover;
-}
+} */
 
 .maskBody {
-  background: linear-gradient(180deg, #A06666 0%, rgba(191, 191, 191, 0) 100%);
+  background: linear-gradient(180deg, var(--preto) 0%, rgba(191, 191, 191, 0) 60%);
   background-blend-mode: multiply;
   background-attachment: fixed;
   display: flex;

@@ -1,4 +1,3 @@
-"use client"
 import { useEffect, useState } from 'react'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -21,9 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={[inter.className].join(' ')} style={{ "--bgImage": background } as React.CSSProperties}>
-        <div className='maskBody'>
-          {children}
-        </div>
+        {children}
       </body>
     </html >
   )
