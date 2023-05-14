@@ -1,13 +1,10 @@
 "use client"
 import '@/app/globals.css'
 import Image from 'next/image'
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 function Index({ children }: { children: React.ReactNode }) {
-    const min = 1
-    const max = 5
-    const random = Math.floor(Math.random() * (max - min + min) + min)
-    const [background, setBackground] = useState(`/images/background-0${random}.jpg`)
+    const [background, setBackground] = useState('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80')
 
     return (
         <>
@@ -18,7 +15,7 @@ function Index({ children }: { children: React.ReactNode }) {
                     alt='background'
                     fill={true}
                     priority={false}
-                    style={{ position: 'absolute', objectFit: 'cover', zIndex: - 1 }}
+                    style={{ position: 'absolute', objectFit: 'cover', zIndex: -1 }}
                     className='maskbody'
                 />
             </div>
