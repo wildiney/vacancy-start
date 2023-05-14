@@ -33,10 +33,10 @@ function Index() {
 
     if (!ferias) {
         return (
-            <div className='m-auto w-11/12 md:w-9/12 translate-y-40 md:translate-y-32 lg:translate-y-32 xl:translate-y-44'>
-                <p className='text-center text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-white font-semibold mb-2 xl:mb-4 drop-shadow-lg'>Faltam</p>
-                <p className='text-center text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-white font-semibold font-mono mb-2 xl:mb-4 drop-shadow-lg'>{time.dias}d {time.horas}h {time.minutos}m {time.segundos}s</p>
-                <p className='text-center text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-white font-semibold mb-2 xl:mb-4 drop-shadow-lg'>para as FÉRIAS!</p>
+            <div className='m-auto w-11/12 md:w-9/12 translate-y-40 md:translate-y-32 lg:translate-y-32 xl:translate-y-52'>
+                <p className='text-center text-2xl md:text-5xl lg:text-5xl xl:text-6xl text-white font-semibold mb-2 xl:mb-4 drop-shadow-lg'>Faltam</p>
+                <p className='text-center text-4xl md:text-6xl lg:text-7xl xl:text-9xl text-white font-semibold font-mono mb-2 xl:mb-4 drop-shadow-lg'>{time.dias}d {time.horas}h {time.minutos}m {time.segundos}s</p>
+                <p className='text-center text-2xl md:text-5xl lg:text-5xl xl:text-6xl text-white font-semibold mb-2 xl:mb-4 drop-shadow-lg'>para as FÉRIAS!</p>
             </div>
         )
     } else {
