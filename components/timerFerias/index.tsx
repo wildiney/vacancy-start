@@ -15,7 +15,7 @@ function Index() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const deadline = new Date('jun 02, 2023 17:59:00').getTime()
+            const deadline = new Date('jun 02, 2023 18:00:00').getTime()
             const now = new Date().getTime()
             const t = deadline - now
             const days = Math.floor(t / (1000 * 60 * 60 * 24))
