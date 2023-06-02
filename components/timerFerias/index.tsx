@@ -24,7 +24,7 @@ function Index() {
             const seconds = Math.floor((t % (1000 * 60)) / 1000)
             setTime({ dias: days < 10 ? 0 + days : days, horas: hours < 10 ? '0' + hours : hours, minutos: minutes < 10 ? '0' + minutes : minutes, segundos: seconds < 10 ? '0' + seconds : seconds })
             if (t < 0) {
-                setFerias(false)
+                setFerias(true)
                 clearInterval(interval)
             }
         }, 1000)
