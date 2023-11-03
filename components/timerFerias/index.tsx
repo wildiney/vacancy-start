@@ -33,11 +33,17 @@ function Index () {
 
     if (!ferias) {
         return (
-            <div className='m-auto w-11/12 md:w-9/12 translate-y-40 md:translate-y-32 lg:translate-y-32 xl:translate-y-52'>
-                <p className='text-center text-2xl md:text-5xl lg:text-5xl xl:text-6xl text-white font-semibold mb-2 xl:mb-4 drop-shadow-lg'>Faltam</p>
-                <p className='text-center text-4xl md:text-6xl lg:text-7xl xl:text-9xl text-white font-semibold font-mono mb-2 xl:mb-4 drop-shadow-lg'>{time.dias}d {time.horas}h {time.minutos}m {time.segundos}s</p>
-                <p className='text-center text-2xl md:text-5xl lg:text-5xl xl:text-6xl text-white font-semibold mb-2 xl:mb-4 drop-shadow-lg'>para as FÉRIAS!</p>
-            </div>
+            <div className='flex flex-col h-full justify-center items-center pb-36'>
+                <div style={{ border: '3px solid white' }}>
+                    <p className='text-center text-white font-semibold font-mono mb-2 xl:mb-4 drop-shadow-[0_6px_6px_rgba(0,0,0,0.4)]'>
+                        <span className="sm:w-full block md:inline md:mr-10 text-9xl md:text-7xl lg:text-8xl xl:text-9xl" aria-label={`${time.dias} dias`}>{time.dias}<span className="text-5xl md:text-6xl" role="presentation">d</span></span>
+                        <span className="sm:w-full block md:inline md:mr-10 text-7xl md:text-7xl lg:text-8xl xl:text-9xl" aria-label={`${time.horas} horas`}>{time.horas}<span className="text-3xl md:text-6xl" role="presentation">h</span></span>
+                        <span className="sm:w-full block md:inline md:mr-10 text-5xl md:text-7xl lg:text-8xl xl:text-9xl" aria-label={`${time.minutos} minutos`}>{time.minutos}<span className="text-xl md:text-6xl" role="presentation">m</span></span>
+                        <span className="sm:w-full block md:inline          text-3xl md:text-7xl lg:text-8xl xl:text-9xl" aria-label={`${time.segundos} segundos`}>{time.segundos}<span className="text-lg md:text-6xl" role="presentation">s</span></span>
+                    </p>
+                    <p className='text-center text-5xl leading-relaxed text-white font-semibold mb-2 mt-10 drop-shadow-[0_6px_6px_rgba(0,0,0,0.4)]'>para as <span className="text-7xl">FÉRIAS!</span></p>
+                </div>
+            </div >
         )
     } else {
         return (

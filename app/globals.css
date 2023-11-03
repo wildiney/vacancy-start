@@ -32,9 +32,12 @@ body {
     var(--azul) 0%,
     rgba(191, 191, 191, 0) 60%
   );
-  background-blend-mode: multiply;
-  background-attachment: fixed;
-  display: flex;
-  height: 100%;
-  width: 100%;
+  @apply flex
+  h-full
+  w-full
+  bg-no-repeat
+  bg-blend-multiply
+  bg-fixed
+  bg-left
+  bg-cover;
 }

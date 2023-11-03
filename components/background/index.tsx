@@ -13,11 +13,12 @@ function Index ({ children }: { children: React.ReactNode }) {
                 <div className='maskBody w-full h-full z-10'></div>
                 <Image
                     src={background}
-                    alt='background'
+                    alt=''
                     fill={true}
                     priority={false}
                     style={{ position: 'absolute', objectFit: 'cover', zIndex: -1 }}
                     className='maskbody'
+                    role='presentation'
                 />
             </div>
             {children}
