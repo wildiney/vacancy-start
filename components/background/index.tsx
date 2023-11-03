@@ -2,9 +2,10 @@
 import '@/app/globals.css'
 import Image from 'next/image'
 import React, { useState } from 'react'
+import { bgImage } from '@/app/constants/constants'
 
-function Index({ children }: { children: React.ReactNode }) {
-    const [background, setBackground] = useState('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80')
+function Index ({ children }: { children: React.ReactNode }) {
+    const [background, setBackground] = useState(bgImage)
 
     return (
         <>

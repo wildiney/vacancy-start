@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-
+import { vacationTime } from '@/app/constants/constants'
 interface ITimerFerias {
     dias: string | number,
     horas: string | number,
@@ -9,13 +9,13 @@ interface ITimerFerias {
     segundos: string | number
 }
 
-function Index() {
+function Index () {
     const [time, setTime] = useState<ITimerFerias>({ dias: 0, horas: 0, minutos: 0, segundos: 0 })
     const [ferias, setFerias] = useState(false)
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const deadline = new Date('jun 02, 2023 18:00:00').getTime()
+            const deadline = new Date(vacationTime).getTime()
             const now = new Date().getTime()
             const t = deadline - now
             const days = Math.floor(t / (1000 * 60 * 60 * 24))

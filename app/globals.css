@@ -6,7 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --vermelho: #A06666;
+  --vermelho: #a06666;
+  --azul: #3ba3bc;
   --preto: #1c4788;
 }
 
@@ -25,13 +26,12 @@ body {
   display: flex;
 }
 
-/* body {
-  background-image: var(--bgImage);
-  background-size: cover;
-} */
-
 .maskBody {
-  background: linear-gradient(180deg, var(--vermelho) 0%, rgba(191, 191, 191, 0) 60%);
+  background: linear-gradient(
+    180deg,
+    var(--azul) 0%,
+    rgba(191, 191, 191, 0) 60%
+  );
   background-blend-mode: multiply;
   background-attachment: fixed;
   display: flex;
